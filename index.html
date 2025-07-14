@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>แบบฟอร์มข้อมูลนักศึกษา</title>
+    <title>แนะนำตัวเอง</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,39 +11,52 @@
       crossorigin="anonymous"
     />
     <style>
-      .student-image {
+      body {
+        background-color: #f8f9fa;
+      }
+      .profile-image {
         max-width: 200px;
         max-height: 200px;
-        object-fit: contain;
-        border: 1px solid #ccc;
-        border-radius: 8px;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border: 3px solid #0d6efd;
+      }
+      .profile-info {
+        max-width: 400px;
+        margin: 0 auto;
+        background: white;
+        padding: 25px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      .profile-info h2 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #0d6efd;
+      }
+      .profile-info p {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
     <div class="container my-5">
-      <h1 class="mb-4">ข้อมูลนักศึกษา</h1>
+      <!-- รูปภาพอยู่บนสุด -->
+      <img
+        src="https://your-image-link.com/photo.jpg"
+        alt="รูปภาพแนะนำตัว"
+        class="profile-image"
+      />
 
-      <div class="mb-3">
-        <label class="form-label fw-bold">ชื่อ-นามสกุล:</label>
-        <span id="fullname">Siragran Promsorn</span>
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label fw-bold">รหัส:</label>
-        <span id="studentid">6740259126</span>
-      </div>
-
-      <div class="mb-3">
-        <label class="form-label fw-bold">ลิงค์รูปภาพ:</label>
-        <span id="imagelink">https://example.com/image.jpg</span>
-      </div>
-
-      <div class="mb-3">
-        <img id="student-image" src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-1/478913768_2521586994850557_1646209074610693024_n.jpg?stp=c450.260.1200.1200a_dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFuzCbwnCMnwb-lU69wA9iY7hlb4GWKfNzuGVvgZYp83GobdMOsGqvifBZCC14tapo&_nc_ohc=A7mONxav5MAQ7kNvwFwh8jE&_nc_oc=AdmCxt_NueZb4ERKo7sWUG4bshwTul7vNC1GXsDnI-al_7MhNcaKemO7h6-WKtHaOyc&_nc_zt=24&_nc_ht=scontent-bkk1-2.xx&_nc_gid=-UGC1-lif8bGNrSIoZS6RA&oh=00_AfTKK-tlsm1r2sfzJYYcHbmKvm0IGtVCg1QXisA_601_-Q&oe=687A401C" alt="รูปภาพนักศึกษา" class="student-image" />
-      </div>
-
-      <div class="mb-3 p-3 bg-light rounded">
+      <div class="profile-info">
+        <h2>สมชาย ใจดี</h2>
+        <p><strong>รหัส:</strong> 1234567890</p>
         <p><strong>สาขาวิชา:</strong> เทคโนโลยีสารสนเทศ</p>
         <p><strong>คณะ:</strong> วิทยาศาสตร์และเทคโนโลยี</p>
       </div>
