@@ -10,6 +10,15 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <style>
+      .student-image {
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+    </style>
   </head>
   <body>
     <div class="container my-5">
@@ -22,7 +31,16 @@
 
       <div class="mb-3">
         <label class="form-label fw-bold">รหัส:</label>
-        <span id="studentid">6740259115</span>
+        <span id="studentid">6740259126</span>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">ลิงค์รูปภาพ:</label>
+        <span id="imagelink">https://example.com/image.jpg</span>
+      </div>
+
+      <div class="mb-3">
+        <img id="student-image" src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-1/478913768_2521586994850557_1646209074610693024_n.jpg?stp=c450.260.1200.1200a_dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFuzCbwnCMnwb-lU69wA9iY7hlb4GWKfNzuGVvgZYp83GobdMOsGqvifBZCC14tapo&_nc_ohc=A7mONxav5MAQ7kNvwFwh8jE&_nc_oc=AdmCxt_NueZb4ERKo7sWUG4bshwTul7vNC1GXsDnI-al_7MhNcaKemO7h6-WKtHaOyc&_nc_zt=24&_nc_ht=scontent-bkk1-2.xx&_nc_gid=-UGC1-lif8bGNrSIoZS6RA&oh=00_AfTKK-tlsm1r2sfzJYYcHbmKvm0IGtVCg1QXisA_601_-Q&oe=687A401C" alt="รูปภาพนักศึกษา" class="student-image" />
       </div>
 
       <div class="mb-3 p-3 bg-light rounded">
